@@ -2,8 +2,7 @@
 
 
 #### Note
-I use `sklearn.datasets` for the actual data and put them into CSV files because the CSV downloads for some of the datasets are have different values from the ones in `sklearn.datasets` and that can cause inconsistent results. 
-
+For as many programs as I can, I extract the values from the dataset in `sklearn.datasets` into a csv file and do the required problem by reading from the file. However for some programs (fashion, online retail datasets etc.) the csv is too big to upload directly here. As such, I'd recommend downloading them from [here](kaggle.com) directly.
 
 
 ## Lab Cycle 
