@@ -1,7 +1,9 @@
 import pandas as pd 
+import matplotlib.pyplot as plt
+
 
 from sklearn.model_selection import train_test_split 
-from sklearn.tree import DecisionTreeClassifier 
+from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score
 
 df = pd.read_csv(r".\Datasets\OnlineRetail.csv")
@@ -34,8 +36,13 @@ model.fit(X_train, y_train)
 
 y_pred = model.predict(X_test)
 
-print(f"Accuracy: {accuracy_score(y_test, y_pred)}")
+print(f"Accuracy: {accuracy_score(y_test, y_pred): .4f}")
 
 print("Feature Importance")
 for feature, importance in zip(X.columns, model.feature_importances_):
     print(f"{feature} : {importance:.4f}")
+
+# Visualize Decision Tree
+plt.figure(figsize=(15, 8))
+plot_tree(model, feature_names=X.columns, class_names=["Low", "High"], filled=True, max_depth=3)
+plt.show()
