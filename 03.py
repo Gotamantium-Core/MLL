@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import pandas as pd
 import matplotlib.pyplot as plt 
 
-df = pd.read_csv(r".\Datasets\diabetes.csv")
+df = pd.read_csv("Datasets/diabetes.csv")
 
 X = df.drop(columns=["target"])
 y = df["target"]

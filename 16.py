@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans, AgglomerativeClustering
 from sklearn.metrics import silhouette_score 
 
-df = pd.read_csv(r".\Datasets\Mall_Customers.csv")
+df = pd.read_csv("Datasets/Mall_Customers.csv")
 
 X = df[["Annual Income (k$)", "Spending Score (1-100)"]]
 

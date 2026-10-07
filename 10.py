@@ -12,7 +12,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score 
 
 
-df = pd.read_csv(r".\Datasets\adult_income.csv")
+df = pd.read_csv("Datasets/adult_income.csv")
 
 X = df.drop(columns=["class"])
 y = df['class']

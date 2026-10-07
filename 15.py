@@ -6,12 +6,12 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-df = pd.read_csv(r".\Datasets\fashion_mnist.csv")
+df = pd.read_csv("Datasets/fashion_mnist.csv")
 
 df = df.sample(5000, random_state=42) # take 5000 samples from the dataset (optimization)
 
-X = df.drop(columns=["class"])
-y = df["class"]
+X = df.drop(columns=["label"])
+y = df["label"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 

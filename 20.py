@@ -6,7 +6,7 @@ from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.linear_model import LinearRegression 
 from sklearn.metrics import mean_squared_error 
 
-df = pd.read_csv(r".\Datasets\boston_housing.csv")
+df = pd.read_csv("Datasets/boston_housing.csv")
 
 X = df.drop(columns=["MEDV"])
 y = df["MEDV"]
