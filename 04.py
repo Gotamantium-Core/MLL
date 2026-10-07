@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 import pandas as pd
 import matplotlib.pyplot as plt
-df = pd.read_csv(r".\Datasets\breastcancer.csv")
+df = pd.read_csv("Datasets/breastcancer.csv")
 
 X = df.drop(columns=["target"])
 y = df[["target"]]

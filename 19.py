@@ -7,7 +7,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier, AdaBoostClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-df = pd.read_csv(r".\Datasets\titanic.csv")
+df = pd.read_csv("Datasets/titanic.csv")
 
 # Only useful columns
 df = df[["pclass","sex","age","sibsp","parch","fare","embarked","survived"]]

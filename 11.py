@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score 
 
-df = pd.read_csv(r".\Datasets\iris.csv")
+df = pd.read_csv("Datasets/iris.csv")
 
 X = df.iloc[:, :2].values # take the two features for visualization
 y = (df["target"] == 0).astype(int) # setosa = 1, others=0

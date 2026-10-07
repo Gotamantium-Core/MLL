@@ -4,7 +4,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans 
 from sklearn.metrics import silhouette_score
 
-df = pd.read_csv(r".\Datasets\digits.csv")
+df = pd.read_csv("Datasets/digits.csv")
 
 X = df.drop(columns=["target"])
 

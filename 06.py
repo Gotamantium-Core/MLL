@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-df = pd.read_csv(r".\Datasets\pimadiabetes.csv")
+df = pd.read_csv("Datasets/pimadiabetes.csv")
 
 df["class"] = df["class"].map({
     "tested_negative": 0,

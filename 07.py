@@ -6,7 +6,7 @@ from sklearn.naive_bayes import MultinomialNB, BernoulliNB
 from sklearn.metrics import accuracy_score, f1_score
 
 
-df = pd.read_csv(r".\Datasets\20newsgroups.csv")
+df = pd.read_csv("Datasets/20newsgroups.csv")
 
 X = df["text"].fillna("") 
 y = df["category"]

@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 
-df = pd.read_csv(r".\Datasets\fashion_mnist.csv")
+df = pd.read_csv("Datasets/fashion_mnist.csv")
 df = df.sample(10000, random_state=42) # take only 10,000 samples 
 
 X = df.drop(columns=["class"])

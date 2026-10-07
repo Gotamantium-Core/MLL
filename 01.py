@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd 
 import matplotlib.pyplot as plt 
 
-df = pd.read_csv(r".\Datasets\housing.csv")
+df = pd.read_csv("Datasets/housing.csv")
 
 X = df[["MedInc"]].values 
 y = df[["MedHouseVal"]].values 

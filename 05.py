@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv(r".\Datasets\20newsgroups.csv")
+df = pd.read_csv("Datasets/20newsgroups.csv")
 
 texts = df["text"].fillna("")
 

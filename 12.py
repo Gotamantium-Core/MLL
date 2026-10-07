@@ -5,7 +5,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC 
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score 
 
-df = pd.read_csv(r".\Datasets\fashion_mnist.csv")
+df = pd.read_csv("Datasets/fashion_mnist.csv")
 
 df = df.sample(5000, random_state=42) # take 5000 samples from the dataset (optimization)
 

@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-df = pd.read_csv(r".\Datasets\mnist.csv")
+df = pd.read_csv("Datasets/mnist.csv")
 
 df = df.sample(5000, random_state=42) # take 5000 samples from the dataset (optimization)
 

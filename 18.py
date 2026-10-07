@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.utils import resample 
 from sklearn.metrics import accuracy_score, f1_score
 
-df = pd.read_csv(r".\Datasets\iris.csv")
+df = pd.read_csv("Datasets/iris.csv")
 
 X = df.drop(columns=["target"])
 y = df["target"]
