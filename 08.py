@@ -7,8 +7,8 @@ from sklearn.metrics import accuracy_score
 df = pd.read_csv("Datasets/fashion_mnist.csv")
 df = df.sample(10000, random_state=42) # take only 10,000 samples 
 
-X = df.drop(columns=["class"])
-y = df["class"]
+X = df.drop(columns=["label"])
+y = df["label"]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
