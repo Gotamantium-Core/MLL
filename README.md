@@ -1,5 +1,7 @@
 # PCCSL508 - Machine Learning Lab
 
+#### Credits
+Huge thanks to [Joel](https://github.com/joellijo32) for making some tweaks to various programs. The last phase would've been absolute hell without you.
 
 #### Note
 For as many programs as I can, I extract the values from the dataset in `sklearn.datasets` into a csv file and do the required problem by reading from the file. unfortunately some of the datasets such as the fashion_mnist and the online retail dataset are too big to upload here directly (The MNIST Dataset is 121 MB 💀). As such, I'd recommend downloading them from [Kaggle](kaggle.com).
@@ -205,6 +207,4 @@ Tasks:
 - Implement polynomial regression with varying degrees.
 - Plot training and validation errors for each degree.
 - Discuss the bias-variance tradeoff and its impact on model performance.
-
-
 
