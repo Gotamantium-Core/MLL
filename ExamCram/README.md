@@ -6,6 +6,25 @@ with a short header at the top stating the question and the 3–4 things to reme
 
 Covers questions: **01, 02, 03, 05, 07, 11, 13, 19, 20**.
 
+---
+
+## This folder vs the existing `01.py`–`20.py` solutions — which should you read?
+
+Both solve the same questions; pick whichever style you already studied. Rough rule:
+**read the existing root solutions for a polished, well-commented write-up; read these for a bare-bones skeleton you can reproduce from memory.**
+
+| Q | Existing root solution | This folder | Skim this one if... |
+|---|------------------------|-------------|---------------------|
+| 01 | Feature: `AveRooms`; prints intercept/coefficients; plots raw predicted points per test sample | Feature: `MedInc`; prints only MSE/R2; draws clean fitted lines via `linspace` (the classic "line through data" plot) | you want the minimal 2-model + fitted-line pattern |
+| 02 | Sorts test data then plots predictions per point; works on `.values` arrays | Plots smooth curves via `linspace`; keeps DataFrames; identical degrees (2,3,4) | you prefer `linspace`-based curve plotting (easier to reuse in other questions) |
+| 03 | Near-identical flow (this file was aligned to it) | Same; also drops a redundant legend on unlabeled bars | either — they match |
+| 05 | Padded formatted table for word probabilities; top-10 via `argsort` | Raw space-separated prints; top-10 via tuple sort; explicit plotting arrays | you want the formulas visible with the least formatting code |
+| 07 | Multinomial first, then Bernoulli; `max_features=5000` both | Bernoulli first; Bernoulli capped at 2000 features, Multinomial uncapped | you want Bernoulli-then-Multinomial order matching the syllabus phrasing |
+| 11 | Plots **training** set with support vectors circled in red; Setosa=1 mapping | Plots **test** set only, no support-vector circles; Setosa=0 mapping; margins labeled per class | you want the shortest boundary+margin draw; skip if you need support vectors in the plot |
+| 13 | Default `relu`/`adam`; architectures `(10,)(20,)(30,)(20,10)(30,20)` | `activation='logistic'`, `solver='sgd'` (matches sigmoid-MLP syllabus wording); architectures `(10,)(20,)(30,)(10,20)(20,30)` | your notes used sigmoid/SGD wording; otherwise the root file is simpler |
+| 19 | Full preprocessing narrative (impute → encode) — this file was completed to match it | Same steps, terser comments | either — the required steps are the same |
+| 20 | `boston_housing.csv` (`MEDV`) | `housing.csv` (`MedHouseVal`) | your exam used the California Housing file — otherwise they are the same plot |
+
 Run from the repo root (paths point at `Datasets/`):
 
 ```bash
