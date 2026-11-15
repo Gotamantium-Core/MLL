@@ -1,21 +1,25 @@
-# PCCSL508 - Machine Learning Lab
+# Machine Learning Lab (PCCSL508)
 
+KTU syllabus lab implementations for `PCCSL508 - Machine Learning Lab`.
 #### Credits
 Huge thanks to [Joel](https://github.com/joellijo32) for making some tweaks to various programs. The last phase would've been absolute hell without you.
 
-#### Note
-For as many programs as I can, I extract the values from the dataset in `sklearn.datasets` into a csv file and do the required problem by reading from the file. unfortunately some of the datasets such as the fashion_mnist and the online retail dataset are too big to upload here directly (The MNIST Dataset is 121 MB 💀). As such, I'd recommend downloading them from [Kaggle](kaggle.com).
+> For last minute studies, simpler implementations of selected questions along with short notes as a [`README.md`](https://github.com/joellijo32/MLL/blob/main/ExamCram/README.md) are inside [`ExamCram/`](https://github.com/joellijo32/MLL/tree/main/ExamCram) folder, thanks to [Abraham J. Pathil](https://github.com/AbrahamJPathil/).
 
-#### Note 2
-The following datasets are **NOT** included here for the reasons mentioned above
-1. 20 News Groups Dataset (13.4 MB)
-2. Online Retail Dataset (43.4 MB)
-3. MNIST Dataset (121 MB)
-4. Fashion MNIST Dataset (148 MB)
+## Usage
 
-For these ones, I recommend going to [Kaggle](kaggle.com) and downloading them from there. 
+```bash
+git clone <repo-url>
+cd MLL
+python -m venv venv
+source venv/bin/activate      # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+python 01.py   # replace 01 with any question number (01–20)
+```
 
-## Lab Cycle 
+---
+
+## Lab Cycle
 From the official KTU syllabus of `PCCSL508 - Machine Learning Lab`
 
 1. Implement linear regression with one variable on the California Housing dataset to predict

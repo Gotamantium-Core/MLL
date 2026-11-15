@@ -1,21 +1,17 @@
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-
 from sklearn.decomposition import PCA # for visualization
-
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
 df = pd.read_csv("Datasets/digits.csv")
-
 X = df.drop(columns=["target"])
 X_scaled = StandardScaler().fit_transform(X)
 
 pca = PCA(n_components=0.95)
 X_reduced = pca.fit_transform(X_scaled)
-
 ks = [4, 5, 7, 9, 11, 13]
 silhs = [] ; labs = [] ; ins = []
 for k in ks:
@@ -36,9 +32,8 @@ print(results.to_string(index=False))
 
 fig, axes = plt.subplots(nrows=2, ncols=3, figsize=(15,8))
 axes = axes.flatten()
-
 for i in range(6):
-  axes[i].scatter(X_reduced[:,0], X_reduced[:,1], c=labs[i], cmap="inferno", alpha=0.5, s=15)
+  axes[i].scatter(X_reduced[:,0], X_reduced[:,1], c=labs[i], cmap="viridis", alpha=0.5, s=15)
   axes[i].set_title(f"K={ks[i]}")
 plt.tight_layout()
 plt.show()
