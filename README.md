@@ -2,6 +2,8 @@
 
 KTU syllabus lab implementations for `PCCSL508 - Machine Learning Lab`.
 
+> For last minute studies, simpler implementations of selected questions along with short notes as a [`README.md`](https://github.com/joellijo32/MLL/blob/main/ExamCram/README.md) are inside [`ExamCram/`](https://github.com/joellijo32/MLL/tree/main/ExamCram) folder, thanks to [Abraham J. Pathil](https://github.com/AbrahamJPathil/).
+
 ## Usage
 
 ```bash
