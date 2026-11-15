@@ -14,7 +14,7 @@ from sklearn.metrics import accuracy_score,precision_score,recall_score,f1_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
 
-df = pd.read_csv("Datasets/wine_quality.csv")
+df = pd.read_csv("../Datasets/wine_quality.csv")
 
 X = df.drop(columns=["class"])
 y = df["class"]

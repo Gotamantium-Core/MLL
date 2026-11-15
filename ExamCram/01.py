@@ -15,7 +15,7 @@ from sklearn.linear_model import SGDRegressor, LinearRegression
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.model_selection import train_test_split
 
-df = pd.read_csv("Datasets/housing.csv")
+df = pd.read_csv("../Datasets/housing.csv")
 
 X = df[["MedInc"]]
 y = df["MedHouseVal"]

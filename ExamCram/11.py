@@ -15,7 +15,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 
-df = pd.read_csv("Datasets/iris.csv")
+df = pd.read_csv("../Datasets/iris.csv")
 X = df[["petal length (cm)","petal width (cm)"]]
 # Setosa -> 0, Non-Setosa -> 1
 Y = df["target"].map({0:0,1:1,2:1})

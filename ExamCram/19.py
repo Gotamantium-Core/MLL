@@ -17,7 +17,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import AdaBoostClassifier, BaggingClassifier
 from sklearn.tree import DecisionTreeClassifier
 
-df = pd.read_csv("Datasets/titanic.csv")
+df = pd.read_csv("../Datasets/titanic.csv")
 
 # Keep only useful columns and fill in missing values
 df = df[["pclass","sex","age","sibsp","parch","fare","embarked","survived"]]

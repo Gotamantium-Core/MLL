@@ -14,7 +14,7 @@ from sklearn.preprocessing import PolynomialFeatures,StandardScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
-df = pd.read_csv("Datasets/autompg.csv")
+df = pd.read_csv("../Datasets/autompg.csv")
 
 # 'class' column holds MPG in this dataset
 df = df[['displacement', 'class']]

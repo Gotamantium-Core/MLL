@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.feature_extraction.text import CountVectorizer
 
-df = pd.read_csv("Datasets/20newsgroups.csv")
+df = pd.read_csv("../Datasets/20newsgroups.csv")
 
 texts = df["text"].fillna("")
 vectorizer = CountVectorizer(stop_words='english',max_features=1000)
