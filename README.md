@@ -1,6 +1,8 @@
 # Machine Learning Lab (PCCSL508)
 
 KTU syllabus lab implementations for `PCCSL508 - Machine Learning Lab`.
+#### Credits
+Huge thanks to [Joel](https://github.com/joellijo32) for making some tweaks to various programs. The last phase would've been absolute hell without you.
 
 > For last minute studies, simpler implementations of selected questions along with short notes as a [`README.md`](https://github.com/joellijo32/MLL/blob/main/ExamCram/README.md) are inside [`ExamCram/`](https://github.com/joellijo32/MLL/tree/main/ExamCram) folder, thanks to [Abraham J. Pathil](https://github.com/AbrahamJPathil/).
 
@@ -209,6 +211,4 @@ Tasks:
 - Implement polynomial regression with varying degrees.
 - Plot training and validation errors for each degree.
 - Discuss the bias-variance tradeoff and its impact on model performance.
-
-
 
